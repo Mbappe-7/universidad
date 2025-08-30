@@ -1,58 +1,44 @@
 /* Estilo general del cuerpo */
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Trebuchet MS", Lucida, Arial, sans-serif;
     margin: 20px;
     background-color: #f9f9f9;
-    color: #333;
+    color: #000000;
 }
 
 /* Títulos principales */
 h1,
 h2,
 h3 {
-    color: #e84d13;
+    color: #3c03cb;
     margin-bottom: 15px;
 }
 
-/* Navbar estilo “pill buttons” */
 nav {
-    background-color: #333;
-    margin-bottom: 10px;
+    background-color: #222; /* Fondo oscuro */
+    margin-bottom: 20px;
     display: flex;
-    gap: 16px;
-    padding: 0px 20px;
-    border-radius: 50px;
-    box-shadow: 0 2px 5px rgba(145, 18, 18, 0.1);
+    gap: 20px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    justify-content: center; /* Centrado */
 }
 
 nav a {
-    display: inline-block;
-    /* Para que se comporten como botones */
-    padding: 8px 16px;
-    margin-right: 10px;
-    background-color: #e84d13;
-    /* Fondo naranja */
+    padding: 10px 20px;
+    background-color: #3498db; /* Azul */
     color: #fff;
-    /* Texto blanco */
-    border-radius: 99px;
-    /* Super redondeado = pill */
+    font-weight: 600;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: 500;
-    transition: background 0.3s, transform 0.2s;
+    transition: all 0.3s ease;
 }
 
+/* Efecto crecer en hover */
 nav a:hover {
-    background-color: #c63c0f;
-    /* Un naranja más oscuro al pasar */
-    transform: translateY(-2px);
-    /* Pequeño “lift” */
-}
-
-nav a:active {
-    background-color: #a6300c;
-    /* Aún más oscuro al hacer clic */
-    transform: translateY(0);
-    /* Vuelve a su lugar */
+    padding: 12px 28px; /* Crece en tamaño */
+    background-color: #2980b9; /* Azul más oscuro */
+    transform: scale(1.05); /* Ligeramente más grande */
 }
 
 /* Línea divisoria */
